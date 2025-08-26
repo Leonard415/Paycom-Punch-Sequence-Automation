@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paycom Punch Automator</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title-section">
+                <div class="icon">🎯</div>
+                <h1>Paycom Punch Automator</h1>
+            </div>
+        </div>
+
+        <div class="punch-sequence">
+            <h2>Today's Punch Sequence:</h2>
+            <div class="punch-list">
+                <div class="punch-item">
+                    <span class="punch-number">1.</span>
+                    <span class="punch-type">IN DAY</span>
+                    <input type="time" id="punch1" class="time-input" value="07:00">
+                </div>
+                <div class="punch-item">
+                    <span class="punch-number">2.</span>
+                    <span class="punch-type">OUT BREAK</span>
+                    <input type="time" id="punch2" class="time-input" value="10:00">
+                </div>
+                <div class="punch-item">
+                    <span class="punch-number">3.</span>
+                    <span class="punch-type">IN BREAK</span>
+                    <input type="time" id="punch3" class="time-input" value="10:15">
+                </div>
+                <div class="punch-item">
+                    <span class="punch-number">4.</span>
+                    <span class="punch-type">OUT LUNCH</span>
+                    <input type="time" id="punch4" class="time-input" value="11:00">
+                </div>
+                <div class="punch-item">
+                    <span class="punch-number">5.</span>
+                    <span class="punch-type">IN LUNCH</span>
+                    <input type="time" id="punch5" class="time-input" value="11:30">
+                </div>
+                <div class="punch-item">
+                    <span class="punch-number">6.</span>
+                    <span class="punch-type">OUT BREAK</span>
+                    <input type="time" id="punch6" class="time-input" value="13:00">
+                </div>
+                <div class="punch-item">
+                    <span class="punch-number">7.</span>
+                    <span class="punch-type">IN BREAK</span>
+                    <input type="time" id="punch7" class="time-input" value="13:15">
+                </div>
+                <div class="punch-item">
+                    <span class="punch-number">8.</span>
+                    <span class="punch-type">OUT DAY</span>
+                    <input type="time" id="punch8" class="time-input" value="15:30">
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="runButton" class="run-button">
+                <span class="button-icon">🚀</span>
+                Run Punch Sequence
+            </button>
+            <button id="stopButton" class="stop-button">
+                <span class="button-icon">⏹️</span>
+                Stop
+            </button>
+        </div>
+
+        <div class="status-bar">
+            <span id="statusText">Ready to automate punches</span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
